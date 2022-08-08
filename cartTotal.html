@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Cart Total</title>
+  </head>
+  <body>
+    <!--write a function which takes an array 
+    of objects containing name, price, and quantity
+    and console.log the total price of items in the cart -->
+    
+    <script>
+      const cart = document.getElementById('cart');
+
+
+      function cartTotal(cartArray) {
+        let total = 0;
+        
+        cartArray.forEach(function (item) {
+          total = total + item.price * item.quantity;
+        });
+        
+        console.log(total);
+      }
+
+      cartTotal ([
+        {name: 'Apple', price: 4, quantity: 2},
+        {name: 'Orange', price: 3, quantity: 3}
+      ])
+    </script>
+  </body>
+</html>

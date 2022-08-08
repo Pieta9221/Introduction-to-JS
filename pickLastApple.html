@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Pick Last Apple</title>
+  </head>
+  <body>
+    <!--Write a function that takes an array of strings
+    and removes the last 2 apples from the array-->
+    <script>
+      
+      function pickLastApples(fruitArray) {
+        let applesPicked = 0;
+        
+        const reversedArray = fruitArray.reverse();
+
+        const filteredArray = reversedArray.filter(function (fruit) {
+          if (applesPicked >= 2) {
+            return true;
+          } else if (fruit === 'apple') {
+            applesPicked = applesPicked + 1;
+            return false;
+          } else {
+            return true;
+          }
+        });
+        return filteredArray.reverse();
+      }
+      pickLastApples(['cherry', 'apple', 'orange', 'apple', 'banana', 'apple']); 
+    </script>
+  </body>
+</html>

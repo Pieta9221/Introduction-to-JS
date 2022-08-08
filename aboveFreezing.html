@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Above Freezing</title>
+  </head>
+  <body>
+    <!--Write a function that takes an array of numbers 
+    (temp in Fahrenheit)
+    and returns an array with only temps above freezing
+    point of water-->
+    <script>
+      
+      function aboveFreezing(temps) {
+        const tempsAboveFreezing = temps.filter(function(temp){
+          return temp > 32;
+        });
+        return tempsAboveFreezing;
+      }
+      aboveFreezing([40, 57, 8, 29, 100, -3, 0]);
+    </script>
+  </body>
+</html>

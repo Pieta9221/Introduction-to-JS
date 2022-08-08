@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Div Increases</title>
+  </head>
+  <body>
+    <!--When you click the button,
+    the number in the div increases by 1-->
+    <div id="counter">0</div>
+    <button onclick="countUp()">Up</button>
+    <script>
+      let count = 0;
+      
+      function countUp()  {
+        count = count + 1;
+        let counter = document.getElementById('counter');
+        counter.innerText= count;
+      }
+      
+    </script>
+  </body>
+</html>

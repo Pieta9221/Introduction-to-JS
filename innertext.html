@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>innerText</title>
+  </head>
+  <body>
+    <!--Set up a button so that when you click the button,
+    the text inside changes to Done-->
+    <button id="todo-button" onclick="changeToDone()">To do</button>
+    <script>
+      
+      function changeToDone()  {
+        let button = document.getElementById('todo-button');
+        button.innerText='Done';
+      }
+      
+    </script>
+  </body>
+</html>

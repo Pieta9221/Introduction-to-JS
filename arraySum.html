@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>arraySum</title>
+  </head>
+  <body>
+    <!--Write a function arraySum that takes an array of numbers 
+    and cnsole.logs the sum of the numbers-->
+    <script>
+      
+      function arraySum(numArray) {
+        let total = 0;
+
+        numArray.forEach(function(num) {
+          total = total + num
+        });
+
+        console.log(total);
+      }
+      arraySum([1, 2, 3]);
+      arraySum([5, -2, 7, 0]);
+    </script>
+  </body>
+</html>

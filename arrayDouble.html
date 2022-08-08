@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>arrayDouble</title>
+  </head>
+  <body>
+    <!--Write a function arrayDouble that takes an array  
+    and cnsole.logs a new array with every value repeated twice-->
+    <script>
+      function arrayDouble(stringArr) {
+        let result = [];
+
+        stringArr.forEach(function(str) {
+          result.push(str);
+          result.push(str);
+        });
+
+        console.log(result);
+      }
+      arrayDouble(['bark', 'meow']);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Div</title>
+  </head>
+  <body>
+    <!--create a button that takes what is in a textbox, 
+      puts it in a div and adds the div to the page-->
+    <input type="text" id="todo-title"/>
+    <button onclick="displayTitle()">Display Title</button>
+    <script>
+      function displayTitle()  {
+        let textbox = document.getElementById('todo-title');
+        let title = textbox.value;
+
+        let div = document.createElement('di');
+        div.innerText= title;
+        document.body.appendChild(div);
+      }
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Min Non-negative</title>
+  </head>
+  <body>
+    <!--Write a function that takes an array of numbers 
+    and returns the smallest number that is >= 0 in the array-->
+    <script>
+      
+      function minNonNegative(numArray) {
+        let min = Infinity;
+
+        numArray.forEach(function (num) {
+          if (num < 0) {
+            return;
+          } else if (num < min) {
+            min = num
+          }
+        });
+        return min;
+      }
+      minNonNegative([1, 5, -2, 4, 3, 5, 0]);
+    </script>
+  </body>
+</html>

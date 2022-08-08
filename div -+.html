@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Div Increases/Decreases</title>
+  </head>
+  <body>
+    <!--When you click the up button,
+    the number in the div increases by 1
+    When you click the down button,
+    the number in the div decreases by 1
+    this method works too:
+  
+          function countUp()  {
+        count = count + 1;
+        let counter = document.getElementById('counter');
+        counter.innerText= count;
+      }
+
+      function countDown()  {
+        count = count - 1;
+        let counter = document.getElementById('counter');
+        counter.innerText= count;
+      }-->
+
+    <div id="counter">0</div>
+    <button onclick="countUp()">Up</button>
+    <button onclick="countDown()">Down</button>
+    <script>
+      let count = 0;
+      
+      function countUp() {
+        count = count + 1;
+        updateCount();
+      }
+      
+      function countDown() {
+        count = count - 1;
+        updateCount();
+      }
+
+      function updateCount()  {
+        let counter = document.getElementById('counter');
+        counter.innerText= count;
+      }
+    </script>
+  </body>
+</html>

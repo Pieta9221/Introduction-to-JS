@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Max</title>
+  </head>
+  <body>
+    <!--Write a function that takes an array of numbers 
+    and returns the largest number in the array-->
+    <script>
+      
+      function max(numArray) {
+        let max = -Infinity;
+
+        numArray.forEach(function (num) {
+          if (num > max) {
+            max = num;
+          }
+        });
+        return max;
+      }
+      max([1, 5, -2, 4, 3, 5, 0]);
+    </script>
+  </body>
+</html>

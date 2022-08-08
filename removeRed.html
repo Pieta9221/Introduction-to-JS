@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Remove Red</title>
+  </head>
+  <body>
+    <!--Write a function that removes
+    a particular colour from
+    an array-->
+    <script>
+      
+      function removeRed(foodArray) {
+        return foodArray.filter(function (food) {
+          return food.color !== 'red';
+        });
+      }
+      removeRed([{name: 'Apple', colour: 'red'}, {name: 'Egg', colour: 'white'}]);
+    </script>
+  </body>
+</html>
